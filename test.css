@@ -14,7 +14,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     display: grid;
-    background-image: url(https://static1.colliderimages.com/wordpress/wp-content/uploads/2020/10/best-tv-shows-to-binge-watch-social.png) ;
+    background-image: url(img/back1.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -122,7 +122,7 @@ header .Container div button {
 Main {
     min-height: calc(100vh - 60px) ;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.671);
+    background-color: rgba(0, 0, 0, 0.26);
 }
 
 Main  .Container {
@@ -135,7 +135,7 @@ Main  .Container {
 }
 
 .Box {
-    margin: 10px 0;
+    margin: 20px 0;
     text-align: center;
     height: 270px;
     width: 20%;
@@ -259,4 +259,79 @@ Main  .Container {
 .Box:hover #Btn2 , 
 .Box:hover #Btn1 {
     transform: translate(-50% , -50%);
+}
+
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(3, 3, 3, 0.822);
+}
+
+footer .Container {
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+footer .Container h2 {
+    color: gold;
+    text-align: center;
+    font-family: 'Luxurious Script', cursive;
+    letter-spacing: 4px;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 0;
+    padding-top: 10px;
+}
+
+footer .Container div {
+    width: 50%;
+    height: 40px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .Container div ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+}
+
+footer .Container div ul li {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-family: 'Rajdhani', sans-serif;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+footer .Container div ul li:hover {
+    color: gold;
+}
+
+footer .Container p {
+    text-align: center;
+    color: #FFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer .Container p span {
+    font-family: 'Meow Script', cursive;
+}
+
+@media (max-width: 600px) {
+    footer .Container div  {
+        width: 70%;
+    }
+}
+
+@media (max-width: 450px) {
+    footer .Container div  {
+        width: 90%;
+    }
 }
