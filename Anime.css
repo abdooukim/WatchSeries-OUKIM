@@ -149,7 +149,7 @@ Main .Container {
   margin: 20px 0;
   text-align: center;
   height: 270px;
-  width: 20%;
+  width: 22%;
   background-color: #ddd;
   position: relative;
   overflow: hidden;
@@ -177,6 +177,22 @@ Main .Container {
 }
 
 .Box:hover p {
+  transform: translateY(0);
+}
+
+.Box audio {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+  background-color: rgb(240,243,244);
+  transform: translateY(-100%);
+  transition: 0.4s;
+}
+
+.Box:hover audio {
   transform: translateY(0);
 }
 
