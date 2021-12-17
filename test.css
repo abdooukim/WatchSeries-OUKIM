@@ -313,6 +313,10 @@ footer .Container div ul li {
   transition: 0.4s;
 }
 
+footer .Container div ul li a , a:visited {
+  color: var(--MainColor);
+}
+
 footer .Container div ul li:hover {
   color: var(--MainColor);
 }
