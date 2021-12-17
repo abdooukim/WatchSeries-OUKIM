@@ -1,337 +1,340 @@
-@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap");
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  background-image: url(img/back1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+:root {
+  --MainColor : gold ;
+  --ButColor1 : tomato ;
+  --ButColor2 : blueviolet ;
+}
 
 ::-webkit-scrollbar {
-    background-color: rgb(0, 0, 0);
-    width: 10px;
+  background-color: rgb(0, 0, 0);
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-   background-color: gold;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: grid;
-    background-image: url(img/back1.jpg) ;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-color: var(--MainColor);
 }
 
 header {
-    height: 60px;
-    width: 100%;
-    background-color: rgba(3, 3, 3, 0.822);
+  height: 60px;
+  width: 100%;
+  background-color: rgba(3, 3, 3, 0.822);
 }
 
 header .Container {
-    width: 95%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .Container h2 {
-    color: gold;
-    width: 20%;
-    font-family: 'Luxurious Script', cursive;
-    letter-spacing: 4px;
-    font-size: 35px;
-    cursor: pointer;
+  color: var(--MainColor);
+  width: 20%;
+  font-family: "Luxurious Script", cursive;
+  letter-spacing: 4px;
+  font-size: 35px;
+  cursor: pointer;
 }
 
 header .Container div {
-    width: 18%;
-    display: flex;
-    justify-content: space-between;
+  width: 22%;
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (max-width: 1150px){
-	
-    header .Container h2  {
-		width: 30%; 
-	}
-    header .Container div {
-        width: 25%;
-    }
+@media (max-width: 1150px) {
+  header .Container h2 {
+    width: 35%;
+  }
+  header .Container div {
+    width: 25%;
+  }
 }
 
-@media (max-width: 900px){
-    header .Container div {
-        width: 35%;
-    }
+@media (max-width: 900px) {
+  header .Container div {
+    width: 35%;
+  }
 }
 
-@media (max-width: 735px){
-    header .Container h2  {
-		width: 40%; 
-	}
-    header .Container div {
-        width: 40%;
-    }
-}
-
-@media (max-width: 600px){
-    header .Container h2  {
-		width: 50%; 
-	}
-    header .Container div {
-        width: 48%;
-    }
-}
-
-@media (max-width: 500px){
-    header .Container h2  {
-		width: 100%; 
-        text-align: center;
-	}
-    header .Container div {
-        display: none;
-    }
-}
-
-header .Container div select {
-    height: 40px;
-    width: 100px;
-    padding: 0 5px;
-    background: none;
-    outline: none;
-    border: 1px solid rgb(255, 255, 255);
-    color: white;
-}
-
-header .Container div select option {
-    color: black;
-    background-color: gold;
-}
-
-header .Container div button {
-    height: 40px;
-    width: 100px;
-    outline: none;
-    border: none;
-    background-color: gold;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-Main {
-    min-height: calc(100vh - 60px) ;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.26);
-}
-
-Main  .Container {
-    height: 100%;
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap ;
-}
-
-.Box {
-    margin: 20px 0;
-    text-align: center;
-    height: 270px;
-    width: 20%;
-    background-color: #DDD;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid gold;
-}
-
-.Box p {
-    width: 100%;
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0.582);
-    position: absolute;
-    bottom: -16px;
-    left: 0;
-    color: #FFF;
-    transform: translateY(100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 18px;
-    font-family: 'Cormorant Unicase', serif;
-    transition: 0.5s;
-}
-
-.Box:hover p {
-    transform: translateY(0);
-}
-
-@media (max-width: 900px){
-	.Container {
-        justify-content: space-between;
-    }
-    .Box  {
-        margin: 10px 0;
-		width: 30% ; 
-	}
-}
-
-@media (max-width: 600px){
-	.Container {
-        justify-content: space-between;
-    }
-    .Box  {
-        margin: 10px 0;
-		width: 48% ; 
-	}
-   
-}
-
-@media (max-width: 450px){
-	main .Container {
-        justify-content: space-evenly;
-    }
-    .Box  {
-        margin: 10px 0;
-		width: 70% ; 
-	}
-   
-}
-
-
-.Box img {
-    height: 100%;
-    width: 100%;
-    transition: 0.8s;
-}
-
-.Box:hover img {
-    transform: scale(1.1) rotate(4deg);
-}
-
-.Box button {
-    position: absolute;
-    top: 50%;
-    height: 45px;
-    width: 100px;
-    border: none;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-@media (max-width: 1065px){
-	
-    .Box button {
-		width: 80px; 
-	}
-}
-
-.Box #Btn1 {
-    left: 25%;
-    background-color: blueviolet;
-    transform: translate(-200% , -50%);
-    border-radius: 20px 0 20px 0;
-    transition: 0.8s;
-}
-
-.Box #Btn1:hover {
-    background-color: white;
-    color:blueviolet ;
-}
-
-.Box #Btn2 {
-    left: 75%;
-    background-color: tomato;
-    transform: translate(100% , -50%);
-    border-radius:  0 20px 0 20px ;
-    transition: 0.8s;
-}
-
-.Box #Btn2:hover {
-    background-color: white;
-    color: tomato;
-}
-
-.Box:hover #Btn2 , 
-.Box:hover #Btn1 {
-    transform: translate(-50% , -50%);
-}
-
-footer {
-    height: 150px;
-    width: 100%;
-    background-color: rgba(3, 3, 3, 0.822);
-}
-
-footer .Container {
-    height: 100%;
-    width: 95%;
-    margin: 0 auto;
-}
-
-footer .Container h2 {
-    color: gold;
-    text-align: center;
-    font-family: 'Luxurious Script', cursive;
-    letter-spacing: 4px;
-    font-size: 35px;
-    cursor: pointer;
-    margin: 0;
-    padding-top: 10px;
-}
-
-footer .Container div {
-    width: 50%;
-    height: 40px;
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer .Container div ul {
-    list-style: none;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    color: #FFF;
-}
-
-footer .Container div ul li {
-    font-size: 15px;
-    text-transform: capitalize;
-    font-weight: normal;
-    font-family: 'Rajdhani', sans-serif;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-footer .Container div ul li:hover {
-    color: gold;
-}
-
-footer .Container p {
-    text-align: center;
-    color: #FFF;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-footer .Container p span {
-    font-family: 'Meow Script', cursive;
+@media (max-width: 735px) {
+  header .Container h2 {
+    width: 40%;
+  }
+  header .Container div {
+    width: 40%;
+  }
 }
 
 @media (max-width: 600px) {
-    footer .Container div  {
-        width: 70%;
-    }
+  header .Container h2 {
+    width: 50%;
+  }
+  header .Container div {
+    width: 48%;
+  }
+}
+
+@media (max-width: 500px) {
+  header .Container h2 {
+    width: 100%;
+    text-align: center;
+  }
+  header .Container div {
+    display: none;
+  }
+}
+
+header .Container div select {
+  height: 40px;
+  width: 100px;
+  padding: 0 5px;
+  background: none;
+  outline: none;
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+}
+
+header .Container div select option {
+  color: black;
+  background-color: var(--MainColor);
+}
+
+header .Container div button {
+  height: 40px;
+  width: 100px;
+  outline: none;
+  border: none;
+  background-color: var(--MainColor);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+Main {
+  min-height: calc(100vh - 60px);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+
+Main .Container {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Box {
+  margin: 20px 0;
+  text-align: center;
+  height: 270px;
+  width: 20%;
+  background-color: #ddd;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--MainColor);
+}
+
+.Box p {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.582);
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  color: #fff;
+  transform: translateY(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 18px;
+  font-family: "Cormorant Unicase", serif;
+  transition: 0.5s;
+}
+
+.Box:hover p {
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .Container {
+    justify-content: space-between;
+  }
+  .Box {
+    margin: 10px 0;
+    width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .Container {
+    justify-content: space-between;
+  }
+  .Box {
+    margin: 10px 0;
+    width: 48%;
+  }
 }
 
 @media (max-width: 450px) {
-    footer .Container div  {
-        width: 90%;
-    }
+  main .Container {
+    justify-content: space-evenly;
+  }
+  .Box {
+    margin: 10px 0;
+    width: 70%;
+  }
+}
+
+.Box img {
+  height: 100%;
+  width: 100%;
+  transition: 0.8s;
+}
+
+.Box:hover img {
+  transform: scale(1.1) rotate(4deg);
+}
+
+.Box button {
+  position: absolute;
+  top: 50%;
+  height: 45px;
+  width: 100px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 1065px) {
+  .Box button {
+    width: 80px;
+  }
+}
+
+.Box #Btn1 {
+  left: 25%;
+  background-color: var(--ButColor1);
+  transform: translate(-200%, -50%);
+  border-radius: 20px 0 20px 0;
+  transition: 0.8s;
+}
+
+.Box #Btn1:hover {
+  background-color: white;
+  color: var(--ButColor1);
+}
+
+.Box #Btn2 {
+  left: 75%;
+  background-color: var(--ButColor2);
+  transform: translate(100%, -50%);
+  border-radius: 0 20px 0 20px;
+  transition: 0.8s;
+}
+
+.Box #Btn2:hover {
+  background-color: white;
+  color: var(--ButColor2);
+}
+
+.Box:hover #Btn2,
+.Box:hover #Btn1 {
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+  background-color: rgba(3, 3, 3, 0.822);
+}
+
+footer .Container {
+  height: 100%;
+  width: 95%;
+  margin: 0 auto;
+}
+
+footer .Container h2 {
+  color: var(--MainColor);
+  text-align: center;
+  font-family: "Luxurious Script", cursive;
+  letter-spacing: 4px;
+  font-size: 35px;
+  cursor: pointer;
+  margin: 0;
+  padding-top: 10px;
+}
+
+footer .Container div {
+  width: 50%;
+  height: 40px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .Container div ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+footer .Container div ul li {
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: normal;
+  font-family: "Rajdhani", sans-serif;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+footer .Container div ul li:hover {
+  color: var(--MainColor);
+}
+
+footer .Container p {
+  text-align: center;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+footer .Container p span {
+  font-family: "Meow Script", cursive;
+}
+
+@media (max-width: 600px) {
+  footer .Container div {
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  footer .Container div {
+    width: 90%;
+  }
 }
