@@ -8,6 +8,7 @@ body {
   box-sizing: border-box;
   display: grid;
   background-size: cover;
+  background-image: url(img/animation3.png);
   background-repeat: no-repeat;
   animation: back 120s infinite;
 }
@@ -67,6 +68,9 @@ header .Container div {
 }
 
 @media (max-width: 900px) {
+  body {
+    animation: none;
+  }
   header .Container div {
     width: 35%;
   }
@@ -346,7 +350,7 @@ footer .Container p span {
 
 
 @keyframes back {
-    0% , 50% , 100% {
+     50% , 100% {
         background-image: url(img/animation1.png);
     }
 
