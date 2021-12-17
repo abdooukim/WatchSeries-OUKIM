@@ -7,9 +7,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   display: grid;
-  background-image: url(img/back1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  animation: back 120s infinite;
 }
 
 :root {
@@ -313,6 +313,11 @@ footer .Container div ul li {
   transition: 0.4s;
 }
 
+footer .Container div ul li a , a:visited {
+    color: var(--MainColor);
+  }
+  
+
 footer .Container div ul li:hover {
   color: var(--MainColor);
 }
@@ -337,4 +342,26 @@ footer .Container p span {
   footer .Container div {
     width: 90%;
   }
+}
+
+
+@keyframes back {
+    0% , 50% , 100% {
+        background-image: url(img/animation1.png);
+    }
+
+    10% , 60% {
+        background-image: url(img/animation2.jpg);
+    }
+    20% ,70% {
+        background-image: url(img/animation3.png);
+    }
+
+    30% , 80% {
+        background-image: url(img/animation4.jpg);
+    }
+    40% , 90% {
+        background-image: url(img/animation5.jpg);
+    }
+
 }
