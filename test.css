@@ -315,6 +315,7 @@ footer .Container div ul li {
 
 footer .Container div ul li a , a:visited {
   color: var(--MainColor);
+  text-decoration: none;
 }
 
 footer .Container div ul li:hover {
