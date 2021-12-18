@@ -63,7 +63,7 @@ header .Container div {
     width: 35%;
   }
   header .Container div {
-    width: 25%;
+    width: 30%;
   }
 }
 
@@ -85,7 +85,7 @@ header .Container div {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   header .Container h2 {
     width: 50%;
   }
@@ -94,7 +94,7 @@ header .Container div {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   header .Container h2 {
     width: 100%;
     text-align: center;
@@ -103,7 +103,6 @@ header .Container div {
     display: none;
   }
 }
-
 header .Container div select {
   height: 40px;
   width: 100px;
@@ -148,8 +147,8 @@ Main .Container {
 .Box {
   margin: 20px 0;
   text-align: center;
-  height: 270px;
-  width: 22%;
+  height: 300px;
+  width: 23%;
   background-color: #ddd;
   position: relative;
   overflow: hidden;
@@ -206,13 +205,13 @@ Main .Container {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .Container {
     justify-content: space-between;
   }
   .Box {
     margin: 10px 0;
-    width: 48%;
+    width: 45%;
   }
 }
 
@@ -247,13 +246,12 @@ Main .Container {
   cursor: pointer;
 }
 
-@media (max-width: 1065px) {
+@media (max-width: 1115px) {
   .Box button {
-    width: 80px;
+    width: 75px;
   }
 }
-
-.Box #Btn1 {
+.Box .Btn1 {
   left: 25%;
   background-color: var(--ButColor1);
   transform: translate(-200%, -50%);
@@ -261,12 +259,12 @@ Main .Container {
   transition: 0.8s;
 }
 
-.Box #Btn1:hover {
+.Box .Btn1:hover {
   background-color: white;
   color: var(--ButColor1);
 }
 
-.Box #Btn2 {
+.Box .Btn2 {
   left: 75%;
   background-color: var(--ButColor2);
   transform: translate(100%, -50%);
@@ -274,13 +272,13 @@ Main .Container {
   transition: 0.8s;
 }
 
-.Box #Btn2:hover {
+.Box .Btn2:hover {
   background-color: white;
   color: var(--ButColor2);
 }
 
-.Box:hover #Btn2,
-.Box:hover #Btn1 {
+.Box:hover .Btn2,
+.Box:hover .Btn1 {
   transform: translate(-50%, -50%);
 }
 
